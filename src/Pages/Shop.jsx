@@ -4,6 +4,7 @@ import Search from "../Components/Search";
 import Description from "../Components/Description";
 // import Stock from "./Components/Stock";
 import Header from "../Components/Header";
+// import CartReviews from "../Components/CartReview";
 
 import Footer from "../Components/Footer";
 
@@ -20,7 +21,6 @@ function Shop() {
     <Description />
 
     <Header />
-
     <Footer className={"max-w-[1340px]"}/>
   
     </section>

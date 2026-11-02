@@ -18,12 +18,13 @@ import Footer from "../Components/Footer";
 function Home() {
   return (
     <>
-      <section className="bg-[#FAFFFF]">
+      <section className="bg-[#FAFFFF] w-full max-w-[1340px] mx-auto">
         <Nav HclassName={"border-[#001515]"}/>
         <Search />
         <Filter />
         <Hero />
         <Stock title={"Available Stock"} desc={"These totebags are currently available for sales"} />
+        <Stock title={"Other's Stock"} desc={"These totebags are currently available for sales"}/>
         <Post />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-6 max-w-screen-xl mx-auto px-5">
           <Card img={monoclebag} />

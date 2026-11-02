@@ -6,27 +6,28 @@ import { RiEBike2Fill } from "react-icons/ri";
 import { FaStar } from "react-icons/fa6";
 import { CiStar } from "react-icons/ci";
 import { TiPlus } from "react-icons/ti";
-import Button from "./Button"
+import Button from "./Button";
 import Header from "./Header";
 import Card from "./Card";
-import monoclebag from "../assets/monoclebag.jpg"
-import colorful from "../assets/colorful.jpeg"
-import happybag from "../assets/happybag.jpg"
-import peachbag from "../assets/peachbasket.jpeg"
-import minimalist from "../assets/minimalist.jpeg"
-import bag from "../assets/images (1).jpeg"
-import angel from "../assets/angel.jpeg"
-
+import monoclebag from "../assets/monoclebag.jpg";
+import colorful from "../assets/colorful.jpeg";
+import happybag from "../assets/happybag.jpg";
+import peachbag from "../assets/peachbasket.jpeg";
+import minimalist from "../assets/minimalist.jpeg";
+import bag from "../assets/images (1).jpeg";
+import angel from "../assets/angel.jpeg";
+// import CartReviews from "./CartReview";
+import Reviews from "./Reviews";
 // import Footer from "./Footer";
-
-
 
 function Description() {
   return (
     <section className="w-full max-w-[1340px] mx-auto px-4 sm:px-5 my-10">
       <div className="max-w-[486px] mb-5">
         <p className="font-Raleway font-semibold text-2xl">Your Cart.</p>
-        <p className="text-sm text-[#2F3131]">Review and manage the items in your shopping cart.</p>
+        <p className="text-sm text-[#2F3131]">
+          Review and manage the items in your shopping cart.
+        </p>
       </div>
 
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -109,100 +110,153 @@ function Description() {
 
               <div className="w-[275px] flex gap-[8px]">
                 <div className="w-[40px] h-[40px] rounded-[8px] bg-[#001616] flex items-center justify-center">
-                    <FaStar className="text-[#DBB800] text-2xl"/>
-
+                  <FaStar className="text-[#DBB800] text-2xl" />
                 </div>
 
                 <div className="w-[40px] h-[40px] rounded-[8px] bg-[#001616] flex items-center justify-center">
-                    <FaStar className="text-[#DBB800] text-2xl"/>
-
+                  <FaStar className="text-[#DBB800] text-2xl" />
                 </div>
 
                 <div className="w-[40px] h-[40px] rounded-[8px] bg-[#001616] flex items-center justify-center">
-                    <FaStar className="text-[#DBB800] text-2xl"/>
-
+                  <FaStar className="text-[#DBB800] text-2xl" />
                 </div>
 
                 <div className="w-[40px] h-[40px] rounded-[8px] bg-[#001616] flex items-center justify-center">
-                    <FaStar className="text-[#DBB800] text-2xl"/>
-
+                  <FaStar className="text-[#DBB800] text-2xl" />
                 </div>
 
                 <div className="w-[40px] h-[40px] rounded-[8px] bg-[#001616] flex items-center justify-center">
-                    <CiStar className="text-[#DBB800] text-2xl"/>
-
+                  <CiStar className="text-[#DBB800] text-2xl" />
                 </div>
 
                 <div className="w-[50px] h-[40px] rounded-[8px] border flex items-center justify-center">
-                    2.4
+                  2.4
                 </div>
-                
               </div>
             </div>
           </div>
 
-            <div className="w-full max-w-[645px] h-[144px] mt-10 overflow-hidden">
-                <div className="w-full flex flex-wrap  gap-5">
-                    <div className="w-[185px] h-[45px] flex justify-between items-center">
-                        <p className="font-Raleway font-semibold text-[20px] text-[#000000]">Price:</p>
-                        <p className="font-bold text-[24px] text-[#001616] w-[120px] border flex items-center justify-center rounded-[4px]">N 4,000</p>
-                    </div>
-                    <div className="border-[3px] hidden md:block text-[#D4D4D4] rounded-[16px]"></div>
+          <div className="w-full max-w-[645px] h-[144px] mt-10 overflow-hidden">
+            <div className="w-full flex flex-wrap  gap-5">
+              <div className="w-[185px] h-[45px] flex justify-between items-center">
+                <p className="font-Raleway font-semibold text-[20px] text-[#000000]">
+                  Price:
+                </p>
+                <p className="font-bold text-[24px] text-[#001616] w-[120px] border flex items-center justify-center rounded-[4px]">
+                  N 4,000
+                </p>
+              </div>
+              <div className="border-[3px] hidden md:block text-[#D4D4D4] rounded-[16px]"></div>
 
-                    <div className="w-[185px] h-[40px] flex items-center gap-3">
-                        <p className="font-Raleway font-semibold text-[18px] text-[#000000]">Quantity:</p>
-                        <div className="w-[100px] h-[40px] rounded-[4px] flex items-center justify-between border p-1">
-                            <TiPlus className="text-[#292D32]"/>
+              <div className="w-[185px] h-[40px] flex items-center gap-3">
+                <p className="font-Raleway font-semibold text-[18px] text-[#000000]">
+                  Quantity:
+                </p>
+                <div className="w-[100px] h-[40px] rounded-[4px] flex items-center justify-between border p-1">
+                  <TiPlus className="text-[#292D32]" />
 
-                            <div className="w-[24px] h-[24px] border flex items-center justify-center rounded-[6px] ">
-                                <p className="font-medium font-Ubuntu text-[18px] text-[#6B6F6B]">1</p>
-                            </div>
+                  <div className="w-[24px] h-[24px] border flex items-center justify-center rounded-[6px] ">
+                    <p className="font-medium font-Ubuntu text-[18px] text-[#6B6F6B]">
+                      1
+                    </p>
+                  </div>
 
-                            <TiMinus className="text-[#292D32]"/>
-                        </div>
-                    </div>
-
+                  <TiMinus className="text-[#292D32]" />
                 </div>
-
-                <p className="font-Raleway text-[18px] text-[#4E5050] mt-3">The Cream-Colored Totebag is a blend of elegance and functionality. Crafted from luxurious fabric, its spacious interior accommodates daily essentials. Lightweight and stylish, it's perfect for any occasion, offering comfort and sophistication. The tote features sturdy, reinforced handles for added durability, ensuring it can carry heavier items without compromising on style. Inside, multiple pockets provide organized storage, making it easy to find your keys, phone, or wallet. The classic cream color pairs effortlessly with any outfit, making it a versatile accessory for both casual and formal settings. Whether you're heading to work, running errands, or enjoying a night out, this tote bag elevates your look while providing practical storage solutions.</p>
-
+              </div>
             </div>
 
-            <div className="w-full  mt-7 flex flex-col gap-3">
-                <Button name={"Buy Now"} className={"w-full h-[71px] border rounded-[5px] font-semibold text-[20px] text-[#111212]"}/>
+            <p className="font-Raleway text-[18px] text-[#4E5050] mt-3">
+              The Cream-Colored Totebag is a blend of elegance and
+              functionality. Crafted from luxurious fabric, its spacious
+              interior accommodates daily essentials. Lightweight and stylish,
+              it's perfect for any occasion, offering comfort and
+              sophistication. The tote features sturdy, reinforced handles for
+              added durability, ensuring it can carry heavier items without
+              compromising on style. Inside, multiple pockets provide organized
+              storage, making it easy to find your keys, phone, or wallet. The
+              classic cream color pairs effortlessly with any outfit, making it
+              a versatile accessory for both casual and formal settings. Whether
+              you're heading to work, running errands, or enjoying a night out,
+              this tote bag elevates your look while providing practical storage
+              solutions.
+            </p>
+          </div>
 
-                <Button name={"Add to chart"} className={"w-full h-[71px] border rounded-[5px] font-semibold text-[20px] text-[#E1E8E8] bg-[#001212]"}/>
-            </div>
+          <div className="w-full  mt-7 flex flex-col gap-3">
+            <Button
+              name={"Buy Now"}
+              className={
+                "w-full h-[71px] border rounded-[5px] font-semibold text-[20px] text-[#111212]"
+              }
+            />
 
-            <div className="w-full min-h-[87px] border border-[#81BDBD] flex items-center justify-between p-5 mt-15 bg-[#E0E7E7] rounded-[8px]">
-                <p className="font-Raleway text-[27px] text-[#005A59]">Select your location</p>
-                <div>
-                    <RiArrowDropDownLine className="text-[#000000]  text-4xl"/>
-                </div>
+            <Button
+              name={"Add to chart"}
+              className={
+                "w-full h-[71px] border rounded-[5px] font-semibold text-[20px] text-[#E1E8E8] bg-[#001212]"
+              }
+            />
+          </div>
+
+          <div className="w-full min-h-[87px] border border-[#81BDBD] flex items-center justify-between p-5 mt-15 bg-[#E0E7E7] rounded-[8px]">
+            <p className="font-Raleway text-[27px] text-[#005A59]">
+              Select your location
+            </p>
+            <div>
+              <RiArrowDropDownLine className="text-[#000000]  text-4xl" />
             </div>
-          
+          </div>
         </div>
       </div>
 
       <div className="w-full mt-10">
         <p className="font-semibold text-[20px] text-[#000000]">Description</p>
-        <p className="font-Raleway text-[16px] text-[#4E5050]">The Cream-Colored Totebag is a blend of elegance and functionality. Crafted from luxurious fabric, its spacious interior accommodates daily essentials. Lightweight and stylish, it's perfect for any occasion, offering comfort and sophistication. The tote features sturdy, reinforced handles for added durability, ensuring it can carry heavier items without compromising on style. Inside, multiple pockets provide organized storage, making it easy to find your keys, phone, or wallet. The classic cream color pairs effortlessly with any outfit, making it a versatile accessory for both casual and formal settings. Whether you're heading to work, running errands, or enjoying a night out, this tote bag elevates your look while providing practical storage solutions.</p>
+        <p className="font-Raleway text-[16px] text-[#4E5050]">
+          The Cream-Colored Totebag is a blend of elegance and functionality.
+          Crafted from luxurious fabric, its spacious interior accommodates
+          daily essentials. Lightweight and stylish, it's perfect for any
+          occasion, offering comfort and sophistication. The tote features
+          sturdy, reinforced handles for added durability, ensuring it can carry
+          heavier items without compromising on style. Inside, multiple pockets
+          provide organized storage, making it easy to find your keys, phone, or
+          wallet. The classic cream color pairs effortlessly with any outfit,
+          making it a versatile accessory for both casual and formal settings.
+          Whether you're heading to work, running errands, or enjoying a night
+          out, this tote bag elevates your look while providing practical
+          storage solutions.
+        </p>
       </div>
 
-        <div className="mt-10">
-            <Header title={"Totebags you may like"} desc={"Totebags you may like"}/>
+      <div className="mb-5 md:ml-auto md:w-1/2">
+        <div>
+          <h1 className="font-bold text-3xl">Customers Review</h1>
+          <p>Testimonies from our Customers</p>
         </div>
+        {/* <CartReviews /> */}
+        <Reviews />
+        <Reviews />
+        <Reviews />
+        <Reviews />
+      </div>
 
-        <div className="w-full grid grid-cols-2 md:grid-cols-4 mt-5 max-sm:gap-2">
-            <Card   img={monoclebag} />
-        <Card   img={colorful} />
-        <Card img={bag}/>
-        <Card   img={happybag} />
-        <Card   img={peachbag} />
+      <div className="mt-10">
+        <Header
+          title={"Totebags you may like"}
+          desc={"Totebags you may like"}
+        />
+      </div>
+
+      <div className="w-full grid grid-cols-2 md:grid-cols-4 mt-5 max-sm:gap-2">
+        <Card img={monoclebag} />
+        <Card img={colorful} />
+        <Card img={bag} />
+        <Card img={happybag} />
+        <Card img={peachbag} />
         <Card img={minimalist} />
-        <Card   img={zero}/>
-        <Card   img={angel} />
-        </div>
+        <Card img={zero} />
+        <Card img={angel} />
+      </div>
     </section>
   );
 }

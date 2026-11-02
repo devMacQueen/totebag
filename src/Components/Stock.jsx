@@ -11,11 +11,11 @@ import jeans from "../assets/jeans.jpeg"
 import Header from "./Header";
 
 
-function Stock() {
+function Stock({title}) {
   return (
     <section className="max-w-screen-xl mx-auto px-5 mt-10">
 
-      <Header title={"Available Stock"} desc={"These totebags are currently available for sales"}/>
+      <Header title={title} desc={"These totebags are currently available for sales"}/>
     
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-6">
