@@ -5,10 +5,14 @@ import { FaStarHalfStroke } from "react-icons/fa6";
 import { TiPlus } from "react-icons/ti";
 import { TiMinus } from "react-icons/ti";
 import { RiDeleteBin6Line } from "react-icons/ri";
+// import Header from "./Header";
 
 function CheckOut() {
 
   return (
+    <>
+    {/* <Header /> */}
+    
     <section className=" w-full">
       <div className="w-full  mt-10 min-h-0 ">
         {/* card two */}
@@ -300,6 +304,7 @@ function CheckOut() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

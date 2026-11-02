@@ -16,12 +16,12 @@ const CheckoutModal = ({ isOpen, onClose }) => {
             aria-label="Close checkout"
             className="absolute right-4 top-4 text-xl text-gray-500 hover:text-black"
           >
-            &times;
+            &times; 
           </button>
           {/* Header Section */}
           <div className="text-center mb-6">
             <h2 className="text-2xl sm:text-[28px] font-semibold font-raleway text-[#111111] mb-1">
-              Payment Method.
+              Payment Method..
             </h2>
             <p className="text-[#2F3131] text-xs sm:text-sm font-normal font-raleway">
               Effortlessly manage your purchases and checkout with ease.
