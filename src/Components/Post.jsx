@@ -2,6 +2,7 @@
 import explore from "../assets/explore.jpg";
 import Button from "./Button";
 import branded from "../assets/branded.jpg";
+import office from "../assets/office-totes.png"
 
 function Post() {
   return (
@@ -44,7 +45,7 @@ function Post() {
 
       <div
         className="w-[300px] h-[620px] rounded-[24px] bg-cover bg-center overflow-hidden relative"
-        style={{ backgroundImage: `url(${branded})` }}
+        style={{ backgroundImage: `url(${office})` }}
       >
         <div className="w-[280px] absolute z-10 bottom-49 it p-3 flex flex-col gap-1">
           <p className="font-Raleway font-medium text-2xl text-[#FFFFFF]">Totes as Office wears.</p>

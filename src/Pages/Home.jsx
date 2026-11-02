@@ -37,8 +37,9 @@ function Home() {
           <Card img={bag} />
         </div>
 
-        <Footer className={"max-w-screen-xl"} />
+        
       </section>
+      <Footer className={"max-w-screen-xl"} />
     </>
   );
 }

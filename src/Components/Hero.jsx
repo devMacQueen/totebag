@@ -32,7 +32,7 @@ function Hero() {
               </p>
               <p className="text-sm font-light text-[#333] mt-3">
                 Totebag’s made with leather fabric. This fabric is usually
-                stronger than the others.{" "}
+                stronger than the others.
               </p>
             </div>
 
